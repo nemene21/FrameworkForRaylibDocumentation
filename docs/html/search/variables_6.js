@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['z_5fcoord_0',['z_coord',['../class_drawable.html#a9b1019e92aaa1575a2589372680d7f61',1,'Drawable']]]
+  ['paused_0',['paused',['../class_timer.html#a791afcf26dc27f358ebb7760e18a7b5c',1,'Timer']]]
 ];

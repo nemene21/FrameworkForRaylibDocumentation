@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['finished_0',['finished',['../class_timer.html#acc304bff8094e5ffc663e19bf9072fb3',1,'Timer']]]
+  ['edge_5fratio_0',['edge_ratio',['../class_emit_shape.html#a1fde926c9e18c5262d5bad0f73f04be1',1,'EmitShape']]]
 ];

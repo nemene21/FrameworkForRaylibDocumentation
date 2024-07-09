@@ -114,9 +114,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a564601ca4ab75681bc6d74acc8199d42" id="r_a564601ca4ab75681bc6d74acc8199d42"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a564601ca4ab75681bc6d74acc8199d42">draw</a> ()</td></tr>
 <tr class="separator:a564601ca4ab75681bc6d74acc8199d42"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_class_drawable"><td colspan="2" onclick="javascript:dynsection.toggleInherit('pub_methods_class_drawable')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="class_drawable.html">Drawable</a></td></tr>
-<tr class="memitem:a3d13343bc1d7da24eece80f2c966d385 inherit pub_methods_class_drawable" id="r_a3d13343bc1d7da24eece80f2c966d385"><td class="memItemLeft" align="right" valign="top">
-&#160;</td><td class="memItemRight" valign="bottom"><b>Drawable</b> (Vector2 position={0, 0}, Vector2 offset={0, 0}, Vector2 scale={1, 1}, float angle=0, std::string shader_path=&quot;-&quot;)</td></tr>
-<tr class="separator:a3d13343bc1d7da24eece80f2c966d385 inherit pub_methods_class_drawable"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad5f25c648ca6a100ca25fa57a7731f0b inherit pub_methods_class_drawable" id="r_ad5f25c648ca6a100ca25fa57a7731f0b"><td class="memItemLeft" align="right" valign="top">
+&#160;</td><td class="memItemRight" valign="bottom"><b>Drawable</b> (Vector2 position={0, 0}, Vector2 offset={0, 0}, Vector2 scale={1, 1}, float angle=0, std::string shader_path=&quot;-&quot;, bool <a class="el" href="class_drawable.html#a7165278584d1ed98c9e43c962e020aa5">is_ui</a>=false)</td></tr>
+<tr class="separator:ad5f25c648ca6a100ca25fa57a7731f0b inherit pub_methods_class_drawable"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af2dda9c842af14b05031d12bf16ca164 inherit pub_methods_class_drawable" id="r_af2dda9c842af14b05031d12bf16ca164"><td class="memItemLeft" align="right" valign="top">
 virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>process</b> (float delta)</td></tr>
 <tr class="separator:af2dda9c842af14b05031d12bf16ca164 inherit pub_methods_class_drawable"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -151,6 +151,10 @@ float&#160;</td><td class="memItemRight" valign="bottom"><b>angle</b></td></tr>
 <tr class="memitem:a210cf3516e819891aab6857fa30d12f9 inherit pub_attribs_class_drawable" id="r_a210cf3516e819891aab6857fa30d12f9"><td class="memItemLeft" align="right" valign="top">
 Color&#160;</td><td class="memItemRight" valign="bottom"><b>tint</b></td></tr>
 <tr class="separator:a210cf3516e819891aab6857fa30d12f9 inherit pub_attribs_class_drawable"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7165278584d1ed98c9e43c962e020aa5 inherit pub_attribs_class_drawable" id="r_a7165278584d1ed98c9e43c962e020aa5"><td class="memItemLeft" align="right" valign="top">
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>is_ui</b></td></tr>
+<tr class="memdesc:a7165278584d1ed98c9e43c962e020aa5 inherit pub_attribs_class_drawable"><td class="mdescLeft">&#160;</td><td class="mdescRight">If this is true on init the <a class="el" href="class_drawable.html" title="An object that gets drawn to the screen with their respective z_coord, also manages a shader material...">Drawable</a> is going to be rendered on the UI layer. <br /></td></tr>
+<tr class="separator:a7165278584d1ed98c9e43c962e020aa5 inherit pub_attribs_class_drawable"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9b1019e92aaa1575a2589372680d7f61 inherit pub_attribs_class_drawable" id="r_a9b1019e92aaa1575a2589372680d7f61"><td class="memItemLeft" align="right" valign="top">
 float&#160;</td><td class="memItemRight" valign="bottom"><b>z_coord</b></td></tr>
 <tr class="memdesc:a9b1019e92aaa1575a2589372680d7f61 inherit pub_attribs_class_drawable"><td class="mdescLeft">&#160;</td><td class="mdescRight">Drawables with a lower z_coord are drawn behind one another. <br /></td></tr>

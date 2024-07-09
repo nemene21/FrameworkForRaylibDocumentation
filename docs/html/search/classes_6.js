@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['input_0',['Input',['../struct_input.html',1,'']]]
+  ['healthcomponent_0',['HealthComponent',['../class_health_component.html',1,'']]]
 ];

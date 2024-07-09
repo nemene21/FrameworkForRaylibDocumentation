@@ -113,8 +113,9 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:adeeef30b38c6329be3a19db00410b270"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a80c151cba4d99ef4316c372442ba7ff4" id="r_a80c151cba4d99ef4316c372442ba7ff4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a80c151cba4d99ef4316c372442ba7ff4">process</a> (float delta)</td></tr>
 <tr class="separator:a80c151cba4d99ef4316c372442ba7ff4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adb37523967e687529ac9810138e2ad61" id="r_adb37523967e687529ac9810138e2ad61"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#adb37523967e687529ac9810138e2ad61">draw</a> (float delta)</td></tr>
-<tr class="separator:adb37523967e687529ac9810138e2ad61"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a11bce58758c06d8f9eb116c5f1965076" id="r_a11bce58758c06d8f9eb116c5f1965076"><td class="memItemLeft" align="right" valign="top"><a id="a11bce58758c06d8f9eb116c5f1965076" name="a11bce58758c06d8f9eb116c5f1965076"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>render</b> (float delta)</td></tr>
+<tr class="separator:a11bce58758c06d8f9eb116c5f1965076"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab126d19acaae64492b430d29d32d87eb" id="r_ab126d19acaae64492b430d29d32d87eb"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab126d19acaae64492b430d29d32d87eb">set_tile</a> (int x, int y, int type)</td></tr>
 <tr class="memdesc:ab126d19acaae64492b430d29d32d87eb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set tile at x, y to type.  <br /></td></tr>
 <tr class="separator:ab126d19acaae64492b430d29d32d87eb"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -172,6 +173,9 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>queue_free</b
 <tr class="memitem:a667f55f4c732cec106830b4082cc0754 inherit pub_methods_class_entity" id="r_a667f55f4c732cec106830b4082cc0754"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="class_component.html">Component</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_entity.html#a667f55f4c732cec106830b4082cc0754">get_component</a> (ComponentType type)</td></tr>
 <tr class="memdesc:a667f55f4c732cec106830b4082cc0754 inherit pub_methods_class_entity"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a pointer to the wanted component.  <br /></td></tr>
 <tr class="separator:a667f55f4c732cec106830b4082cc0754 inherit pub_methods_class_entity"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a94c7453d588ca52d9cf79351b293bc91 inherit pub_methods_class_entity" id="r_a94c7453d588ca52d9cf79351b293bc91"><td class="memItemLeft" align="right" valign="top">
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>draw</b> (float delta)</td></tr>
+<tr class="separator:a94c7453d588ca52d9cf79351b293bc91 inherit pub_methods_class_entity"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
@@ -181,6 +185,9 @@ Vector2&#160;</td><td class="memItemRight" valign="bottom"><b>tilesize</b></td><
 <tr class="memitem:a5253150422789a2b8ecee2f8a7abf0d5" id="r_a5253150422789a2b8ecee2f8a7abf0d5"><td class="memItemLeft" align="right" valign="top"><a id="a5253150422789a2b8ecee2f8a7abf0d5" name="a5253150422789a2b8ecee2f8a7abf0d5"></a>
 Vector2&#160;</td><td class="memItemRight" valign="bottom"><b>chunksize</b></td></tr>
 <tr class="separator:a5253150422789a2b8ecee2f8a7abf0d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab1e08f59f691c5d8573f9eec400413f9" id="r_ab1e08f59f691c5d8573f9eec400413f9"><td class="memItemLeft" align="right" valign="top"><a id="ab1e08f59f691c5d8573f9eec400413f9" name="ab1e08f59f691c5d8573f9eec400413f9"></a>
+<a class="el" href="class_tilemap_renderer.html">TilemapRenderer</a>&#160;</td><td class="memItemRight" valign="bottom"><b>renderer</b></td></tr>
+<tr class="separator:ab1e08f59f691c5d8573f9eec400413f9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="inherited" name="inherited"></a>
 Additional Inherited Members</h2></td></tr>
@@ -198,33 +205,6 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>death_queued</b></td>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Draws a tilemap and handles autotiling and collision on the TILEMAP collision layer. </p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
-<a id="adb37523967e687529ac9810138e2ad61" name="adb37523967e687529ac9810138e2ad61"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#adb37523967e687529ac9810138e2ad61">&#9670;&#160;</a></span>draw()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void Tilemap::draw </td>
-          <td>(</td>
-          <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>delta</em></span></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Reimplemented from <a class="el" href="class_entity.html">Entity</a>.</p>
-
-</div>
-</div>
 <a id="a79c66d72474722eac09d0025fca59ef8" name="a79c66d72474722eac09d0025fca59ef8"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a79c66d72474722eac09d0025fca59ef8">&#9670;&#160;</a></span>get_tile()</h2>
 

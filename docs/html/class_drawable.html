@@ -102,17 +102,20 @@ Inheritance diagram for Drawable:</div>
  <div class="center">
   <img src="class_drawable.png" usemap="#Drawable_map" alt=""/>
   <map id="Drawable_map" name="Drawable_map">
-<area href="class_particle_system.html" title="Draws and processes list of particles." alt="ParticleSystem" shape="rect" coords="0,56,95,80"/>
-<area href="class_sprite.html" title="Draws a single texture based on it&#39;s transform properties." alt="Sprite" shape="rect" coords="105,56,200,80"/>
-<area href="class_trail.html" title="Draws a shrinking trail with a color gradient." alt="Trail" shape="rect" coords="210,56,305,80"/>
+<area href="class_particle_system.html" title="Draws and processes list of particles." alt="ParticleSystem" shape="rect" coords="0,56,108,80"/>
+<area href="class_sprite.html" title="Draws a single texture based on it&#39;s transform properties." alt="Sprite" shape="rect" coords="118,56,226,80"/>
+<area href="class_tilemap_renderer.html" alt="TilemapRenderer" shape="rect" coords="236,56,344,80"/>
+<area href="class_trail.html" title="Draws a shrinking trail with a color gradient." alt="Trail" shape="rect" coords="354,56,462,80"/>
+<area href="class_u_i_drawable.html" title="UI drawables get drawn on their own layer on top of the game layer." alt="UIDrawable" shape="rect" coords="472,56,580,80"/>
+<area href="class_progress_bar.html" title="Draws a progress bar on the UI layer." alt="ProgressBar" shape="rect" coords="472,112,580,136"/>
   </map>
 </div></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a3d13343bc1d7da24eece80f2c966d385" id="r_a3d13343bc1d7da24eece80f2c966d385"><td class="memItemLeft" align="right" valign="top"><a id="a3d13343bc1d7da24eece80f2c966d385" name="a3d13343bc1d7da24eece80f2c966d385"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>Drawable</b> (Vector2 position={0, 0}, Vector2 offset={0, 0}, Vector2 scale={1, 1}, float angle=0, std::string shader_path=&quot;-&quot;)</td></tr>
-<tr class="separator:a3d13343bc1d7da24eece80f2c966d385"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad5f25c648ca6a100ca25fa57a7731f0b" id="r_ad5f25c648ca6a100ca25fa57a7731f0b"><td class="memItemLeft" align="right" valign="top"><a id="ad5f25c648ca6a100ca25fa57a7731f0b" name="ad5f25c648ca6a100ca25fa57a7731f0b"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>Drawable</b> (Vector2 position={0, 0}, Vector2 offset={0, 0}, Vector2 scale={1, 1}, float angle=0, std::string shader_path=&quot;-&quot;, bool <a class="el" href="#a7165278584d1ed98c9e43c962e020aa5">is_ui</a>=false)</td></tr>
+<tr class="separator:ad5f25c648ca6a100ca25fa57a7731f0b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa37d7b328240d343134adcfe5e4dcd38" id="r_aa37d7b328240d343134adcfe5e4dcd38"><td class="memItemLeft" align="right" valign="top"><a id="aa37d7b328240d343134adcfe5e4dcd38" name="aa37d7b328240d343134adcfe5e4dcd38"></a>
 virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>draw</b> ()=0</td></tr>
 <tr class="separator:aa37d7b328240d343134adcfe5e4dcd38"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -143,6 +146,10 @@ float&#160;</td><td class="memItemRight" valign="bottom"><b>angle</b></td></tr>
 <tr class="memitem:a210cf3516e819891aab6857fa30d12f9" id="r_a210cf3516e819891aab6857fa30d12f9"><td class="memItemLeft" align="right" valign="top"><a id="a210cf3516e819891aab6857fa30d12f9" name="a210cf3516e819891aab6857fa30d12f9"></a>
 Color&#160;</td><td class="memItemRight" valign="bottom"><b>tint</b></td></tr>
 <tr class="separator:a210cf3516e819891aab6857fa30d12f9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7165278584d1ed98c9e43c962e020aa5" id="r_a7165278584d1ed98c9e43c962e020aa5"><td class="memItemLeft" align="right" valign="top"><a id="a7165278584d1ed98c9e43c962e020aa5" name="a7165278584d1ed98c9e43c962e020aa5"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>is_ui</b></td></tr>
+<tr class="memdesc:a7165278584d1ed98c9e43c962e020aa5"><td class="mdescLeft">&#160;</td><td class="mdescRight">If this is true on init the <a class="el" href="class_drawable.html" title="An object that gets drawn to the screen with their respective z_coord, also manages a shader material...">Drawable</a> is going to be rendered on the UI layer. <br /></td></tr>
+<tr class="separator:a7165278584d1ed98c9e43c962e020aa5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9b1019e92aaa1575a2589372680d7f61" id="r_a9b1019e92aaa1575a2589372680d7f61"><td class="memItemLeft" align="right" valign="top"><a id="a9b1019e92aaa1575a2589372680d7f61" name="a9b1019e92aaa1575a2589372680d7f61"></a>
 float&#160;</td><td class="memItemRight" valign="bottom"><b>z_coord</b></td></tr>
 <tr class="memdesc:a9b1019e92aaa1575a2589372680d7f61"><td class="mdescLeft">&#160;</td><td class="mdescRight">Drawables with a lower z_coord are drawn behind one another. <br /></td></tr>
@@ -179,6 +186,8 @@ float&#160;</td><td class="memItemRight" valign="bottom"><b>z_coord</b></td></tr
 
 <p>Returns the actual position of a <a class="el" href="class_drawable.html" title="An object that gets drawn to the screen with their respective z_coord, also manages a shader material...">Drawable</a> object. </p>
 <dl class="section return"><dt>Returns</dt><dd>Position of <a class="el" href="class_drawable.html" title="An object that gets drawn to the screen with their respective z_coord, also manages a shader material...">Drawable</a> (position + offst * scale) </dd></dl>
+
+<p>Reimplemented in <a class="el" href="class_u_i_drawable.html#ae2d7f7092f211da1f8f3271cb5ce298e">UIDrawable</a>.</p>
 
 </div>
 </div>
